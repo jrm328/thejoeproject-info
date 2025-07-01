@@ -21,10 +21,13 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material
 
+      - name: Configure Git for GitHub Actions
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy with MkDocs
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages --push-remote https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
+          mkdocs gh-deploy --force --remote-name origin
