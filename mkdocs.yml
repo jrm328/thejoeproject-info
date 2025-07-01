@@ -1,0 +1,50 @@
+site_name: The Joe Project Wiki
+site_url: https://thejoeproject.info
+repo_url: https://github.com/jrm328/thejoeproject-info
+site_description: A build log and documentation hub for all of Joe's projects.
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+    - content.tabs.link
+
+nav:
+  - Home: index.md
+  - Projects:
+      - Mini Air Hockey Table: projects/mini-air-hockey.md
+      - Steam Deck Arcade Dock: projects/steam-deck-arcade.md
+      - Watch Mod: projects/watch-mod.md
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.highlight
+  - pymdownx.extra
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  # Optional future plugin for generating JSON
+  # - json_schema
