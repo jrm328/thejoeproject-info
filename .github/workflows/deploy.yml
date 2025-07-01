@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # 👈 allows pushing to gh-pages
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,14 +24,12 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material
 
-      - name: Configure Git for GitHub Actions
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Deploy with MkDocs
+      - name: Deploy to GitHub Pages
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
-          mkdocs gh-deploy --force --remote-name origin
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # this is automatically available
+        run: mkdocs gh-deploy --force
