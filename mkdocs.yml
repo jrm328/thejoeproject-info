@@ -46,5 +46,5 @@ extra_css:
 
 plugins:
   - search
-  - json:
-      output_file: assets/projects.json
+  - json-schema:
+      json_schema: assets/projects.json
