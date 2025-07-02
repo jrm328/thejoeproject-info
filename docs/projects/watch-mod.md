@@ -2,6 +2,8 @@
 title: Synoke Watch Mod
 tags: [Watch Modding, Gel Insert]
 description: A modded Synoke watch with custom gel insert and case cleanup.
+summary: A modded Synoke watch for my 11 year old.
+thumbnail: https://placehold.co/400x200?text=Custom+Watch+Mod
 ---
 
 # Synoke Watch Mod
