@@ -2,6 +2,7 @@ site_name: The Joe Project Wiki
 site_url: https://thejoeproject.info
 repo_url: https://github.com/jrm328/thejoeproject-info
 site_description: A build log and documentation hub for all of Joe's projects.
+
 theme:
   name: material
   palette:
@@ -46,5 +47,3 @@ extra_css:
 
 plugins:
   - search
-  - json-schema:
-      json_schema: assets/projects.json
