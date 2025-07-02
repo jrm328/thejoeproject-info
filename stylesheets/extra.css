@@ -1,0 +1,28 @@
+/* Extra CSS for The Joe Project Wiki */
+
+/* Import your Moonshine font */
+@font-face {
+  font-family: 'Moonshine';
+  src: url('../assets/MoonshinePersonalUseRegular-w1xrZ.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use Moonshine for headings */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: 'Moonshine', cursive;
+  color: #002b54; /* Blueprint navy */
+}
+
+/* Light blueprint background highlight for code blocks and notes */
+.md-typeset .admonition,
+.md-typeset pre {
+  background-color: #e6f0ff;
+}
+
+/* Optional: tweak link colors */
+.md-typeset a {
+  color: #007acc;
+}

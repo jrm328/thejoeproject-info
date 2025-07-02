@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Steam Deck Arcade Dock",
+    "summary": "Building a custom arcade powered by the Steam Deck.",
+    "thumbnail": "https://placehold.co/400x200?text=Steam+Deck+Arcade",
+    "slug": "steam-deck-arcade",
+    "url": "https://thejoeproject.info/projects/steam-deck-arcade/",
+    "tags": [
+      "steam deck",
+      "3d printing"
+    ]
+  },
+  {
+    "title": "Synoke Watch Mod",
+    "summary": "A modded Synoke watch for my 11 year old.",
+    "thumbnail": "/assets/images/ModdedSynoke.png",
+    "slug": "watch-mod",
+    "url": "https://thejoeproject.info/projects/watch-mod/",
+    "tags": [
+      "mods",
+      "hardware"
+    ]
+  },
+  {
+    "title": "Mini Air Hockey Table",
+    "summary": "A 3D printed tabletop air hockey game using scavenged electronics and a fan.",
+    "thumbnail": "https://placehold.co/400x200?text=Mini+Air+Hockey+Table",
+    "slug": "mini-air-hockey",
+    "url": "https://thejoeproject.info/projects/mini-air-hockey/",
+    "tags": [
+      "3d printing",
+      "hardware"
+    ]
+  }
+]
